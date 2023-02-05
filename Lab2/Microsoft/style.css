@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.Log-In img {
+    width: 108px;
+    height: 23px;
+    position: absolute;
+    top: 15px;
+    left: 85px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.first {
+    position: absolute;
+    top: 18px;
+    left: 216px;
+}
+
+.first a {
+    padding: 10px;
+}
+
+.second {
+    position: absolute;
+    top: 21px;
+    right: 94px;
+}
+
+.second a {
+    padding: 24px;
+}
+
+.first a:hover {
+    text-decoration: underline;
+}
+
+.second a:hover {
+    text-decoration: underline;
+}
+
+.MicroImg {
+    position: absolute;
+    top: 54px;
+    height: 480px;
+}
+
+.Microsoft {
+    position: relative;
+    top: 220px;
+    left: 120px;
+}
+
+.Microsoft h2 {
+    font-size: 34px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Microsoft p {
+    font-size: 18px;
+    padding-top: 16px;
+}
+
+.images {
+    position: absolute;
+    right: 0px;
+}
+
+.images #one {
+    width: 10px;
+    height: 8px;
+    position: relative;
+    right: 275px;
+    top: 5px;
+}
+
+.images #two {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    right: 208px;
+    top: 8px;
+}
+
+.images #three {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 150px;
+    top: 8px;
+}
+
+.images #four {
+    width: 31px;
+    height: 31px;
+    position: relative;
+    right: 80px;
+    top: 15px;
+}
+
+.Microsoft img {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 28px;
+    left: 20px;
+}
+
+.Microsoft button {
+    background-color: #0067b8;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    border-color: #0067b8;
+    border: 1px solid #0067b8;
+    padding: 9px;
+    position: relative;
+    top: 25px;
+}
+
+.Microsoft button a {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: white;
+}
+
+.Microsoft button:hover {
+    background-color: blue;
+}
+
+.Microsoft a {
+    position: relative;
+    top: 25px;
+    left: 18px;
+}
+
+.tables {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    top: 470px;
+    left: -10px;
+}
+
+.tables img {
+    width: 356px;
+    height: 201px;
+    display: flex;
+    padding: 15px;
+}
+
+.end {
+    position: absolute;
+    top: 830px;
+}
+
+.end ul li {
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+}
+
+.end ul li a {
+    text-decoration: underline;
+    color: #0067b8;
+    font-size: 16px;
+}
+
+.end ul li h4 {
+    font-size: 18px;
+}
+
+.end ul li p {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.Edge {
+    position: relative;
+    left: 40px;
+}
+
+.OneDrive {
+    position: relative;
+    left: 170px;
+}
+
+.Windows11 {
+    position: relative;
+    left: 230px;
+}
+
+.footer {
+    position: relative;
+    top: 680px;
+    display: flex;
+
+}
+
+.footer ul {
+    background-color: rgb(231, 231, 231);
+    padding: 50px;
+}
+
+.footer ul li {
+    padding: 5px;
+}
+
+.footer ul li h4 {
+    font-size: 17px;
+    color: #000;
+    position: relative;
+    left: 5px;
+
+}
+
+.footer ul li a {
+    font-size: 12px;
+    color: gray;
+    display: block;
+    padding: 5px;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.last-step img {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 1400px;
+    left: 55px;
+}
+
+.last-step #en {
+    text-decoration: underline;
+    color: gray;
+    font-size: 14px;
+    position: absolute;
+    top: 1397px;
+    left: 80px;
+
+}
+
+.last-step ul {
+    position: absolute;
+    top: 1387px;
+    right: 0px;
+
+}
+
+.last-step ul a {
+    background-color: rgb(231, 231, 231);
+    color: gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.last-step ul a:hover {
+    text-decoration: underline;
+}
