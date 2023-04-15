@@ -1,0 +1,49 @@
+<div class="top">
+  <p class="title">Vacancies list</p>
+  <p class="scroll" (click)="scrollDown()">Add new vacancy</p>
+</div>
+
+<div *ngIf="!loaded" class="loading">
+  <img src="/assets/loading.gif" alt="loading">
+</div>
+
+<div class="list">
+  <div *ngFor="let vacancy of vacancies" class="vacancy">
+    <a href="/vacancies/1" style="display: flex; color: #000">
+<!--    <a [routerLink]="['/vacancies/{{vacancy.id}}']" style="display: flex; color: #000">-->
+      <div class="logo">
+        <img src="{{vacancy.image}}" alt="vacancy logo">
+      </div>
+      <div class="info">
+        <div class="info_name">
+          <p class="name">{{vacancy.name}}</p>
+          <p class="description">{{vacancy.description}}</p>
+        </div>
+        <p class="location">
+          from {{vacancy.company}}
+        </p>
+      </div>
+    </a>
+    <p class="salary">{{vacancy.salary.toLocaleString('ru-RU')}} ₸</p>
+    <div class="remove" (click)="deleteVacancy(vacancy.id)"><span class="material-symbols-outlined">backspace</span></div>
+  </div>
+</div>
+
+<div class="add">
+  <p class="title">Add new vacancy</p>
+  <p class="section"><span class="material-symbols-outlined">business_center</span> Vacancy information:</p>
+  <div class="add_top">
+    <textarea [(ngModel)]="vacancyDescription" placeholder="Enter description about your vacancy"></textarea>
+    <div class="top_right">
+      <input type="text" [(ngModel)]="vacancyName" placeholder="Vacancy name">
+      <input type="number" [(ngModel)]="vacancyCompanyId" placeholder="Vacancy owner id">
+      <input type="number" [(ngModel)]="vacancySalary" placeholder="Vacancy salary">
+    </div>
+  </div>
+  <p class="section"><span class="material-symbols-outlined">mms</span> Vacancy logo:</p>
+  <div class="add_bottom">
+    <input type="text" [(ngModel)]="vacancyImage" placeholder="Enter url to image">
+    <button (click)="addVacancy()">Add new vacancy</button>
+  </div>
+</div>
+

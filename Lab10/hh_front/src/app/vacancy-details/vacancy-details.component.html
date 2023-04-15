@@ -1,0 +1,36 @@
+<div class="return_back">
+  <p style="font-weight: 600; text-decoration: underline">{{vacancy.id}}</p>
+  <div class="back" (click)="returnBack()">
+    <span class="material-symbols-outlined">undo</span>
+    Return back
+  </div>
+</div>
+
+<div class="vacancy_details">
+  <img src="{{vacancy.image}}" alt="">
+  <div class="details_info">
+    <p class="name">{{vacancy.name}}</p>
+    <p class="location">
+      owner is {{vacancy.company}}
+    </p>
+    <p class="salary"><span>salary:</span>{{vacancy.salary.toLocaleString('ru-RU')}} ₸</p>
+  </div>
+</div>
+
+<div class="update">
+  <p class="title">Update your vacancy</p>
+  <p class="section"><span class="material-symbols-outlined">business_center</span> Vacancy information:</p>
+  <div class="update_top">
+    <textarea class="description" [value]="vacancy.description" [(ngModel)]="vacancyDescription" placeholder="Enter description about your vacancy"></textarea>
+    <div class="top_right">
+      <input [value]="vacancy.name" [(ngModel)]="vacancyName" type="text" placeholder="Vacancy name">
+<!--      <input [value]="vacancy.company.id" [(ngModel)]="vacancyCompanyId" type="number" placeholder="Vacancy owner">-->
+      <input [value]="vacancy.salary" [(ngModel)]="vacancySalary" type="number" placeholder="Vacancy salary">
+    </div>
+  </div>
+  <p class="section"><span class="material-symbols-outlined">mms</span> Vacancy logo:</p>
+  <div class="update_bottom">
+    <input [value]="vacancy.image" [(ngModel)]="vacancyImage" type="text" placeholder="Enter url to image">
+    <button (click)="updateVacancy(vacancy.id)">Update vacancy</button>
+  </div>
+</div>

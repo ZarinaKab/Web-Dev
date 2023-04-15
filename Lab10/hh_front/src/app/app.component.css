@@ -1,0 +1,94 @@
+header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 120px;
+  margin-bottom: 30px;
+
+  position: relative;
+}
+header::after
+{
+  width: 84.5%;
+
+  content: "";
+  display: block;
+
+  border-bottom: 1px solid #d2d2d2;
+
+  position: absolute;
+  bottom: 0;
+}
+.left
+{
+  display: flex;
+  align-items: center;
+}
+.left span
+{
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #FF0000;
+  border-radius: 7px;
+
+  color: #f6f6f6;
+  font-size: 22px;
+
+  margin-right: 12px;
+}
+.left p
+{
+  font-size: 17px;
+  font-weight: 600;
+}
+.right ul
+{
+  display: flex;
+}
+.right ul li
+{
+  margin-right: 40px;
+}
+.right ul li:last-child
+{
+  margin-right: 0;
+}
+.right ul li a
+{
+  color: #000;
+  position: relative;
+}
+.right ul li a:after
+{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin-bottom: -3px;
+
+  content: "";
+  display: block;
+
+  width: 0;
+  border-bottom: 2px solid #FF0000;
+
+  transition: .25s;
+}
+.right ul li a:hover::after
+{
+  width: 100%;
+}
+
+
+.container
+{
+  padding: 0 120px;
+}

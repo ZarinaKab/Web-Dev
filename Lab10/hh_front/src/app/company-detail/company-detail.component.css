@@ -1,0 +1,220 @@
+.return_back
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.back
+{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
+  cursor: pointer;
+}
+.return_back span
+{
+  margin: 0 6px 2px 0;
+}
+
+
+.company_details
+{
+  display: flex;
+  align-items: end;
+
+  margin-top: 30px;
+}
+.company_details img
+{
+  width: 170px;
+}
+.details_info
+{
+  margin-left: 40px;
+}
+.details_info .name
+{
+  font-size: 35px;
+  font-weight: 700;
+}
+.details_info .location
+{
+  font-size: 15px;
+}
+
+
+.update
+{
+  margin: 80px 0;
+}
+.update .title
+{
+  font-size: 22px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+.section
+{
+  font-weight: 500;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+}
+.section span
+{
+  margin-right: 6px;
+  margin-bottom: 2px;
+
+  font-size: 22px;
+}
+.update_top
+{
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+textarea
+{
+  width: calc(100% - 410px);
+
+  box-sizing: border-box;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 7px;
+
+  padding: 15px;
+  resize: none;
+
+  font-family: 'Montserrat', sans-serif;
+}
+.top_right
+{
+  display: flex;
+  flex-direction: column;
+
+  width: 390px;
+}
+input
+{
+  height: 48px;
+
+  margin-bottom: 10px;
+  padding: 0 15px;
+
+  box-sizing: border-box;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 7px;
+
+  font-family: 'Montserrat', sans-serif;
+}
+.top_right input:last-child
+{
+  margin-bottom: 0;
+}
+.update_bottom
+{
+  display: flex;
+  justify-content: space-between;
+}
+.update_bottom input
+{
+  width: calc(100% - 410px);
+  margin-bottom: 0;
+}
+button
+{
+  width: 390px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14.5px;
+
+  background: #FF0000;
+  border-radius: 7px;
+  color: #fff;
+}
+
+
+.company_vacancies
+{
+  font-size: 22px;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+.list
+{
+  margin-bottom: 60px;
+}
+.vacancy
+{
+  background: rgb(241, 241, 241);
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 15px;
+
+  display: flex;
+
+  padding: 20px;
+  margin-bottom: 15px;
+
+  color: #000;
+  transition: .25s;
+
+  position: relative;
+}
+.vacancy:hover
+{
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.logo
+{
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  margin-right: 20px;
+}
+.logo img
+{
+  width: 60%;
+}
+.info
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name
+{
+  font-size: 19px;
+  font-weight: 600;
+
+  margin-bottom: 5px;
+}
+.location
+{
+  font-size: 14px;
+  color: #606060;
+}
+.salary
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  margin: 20px;
+
+  font-size: 19px;
+  font-weight: 600;
+}

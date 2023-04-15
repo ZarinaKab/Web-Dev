@@ -1,0 +1,58 @@
+body
+{
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+
+  background: #FFF;
+}
+body.lock
+{
+  overflow: hidden;
+}
+
+:hover, :focus
+{
+  outline: 0;
+  outline-offset: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+button
+{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar
+{
+  width: 5px;
+}
+::-webkit-scrollbar-track
+{
+  background: #E9E9E9;
+}
+::-webkit-scrollbar-thumb
+{
+  background: #FF0000;
+}
+
+app-root
+{
+  width: 100%;
+  height: 100vh;
+}

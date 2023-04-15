@@ -1,0 +1,55 @@
+<div class="return_back">
+  <p style="font-weight: 600; text-decoration: underline">{{company.id}}</p>
+  <div class="back" (click)="returnBack()">
+    <span class="material-symbols-outlined">undo</span>
+    Return back
+  </div>
+</div>
+
+<div class="company_details">
+  <img src="{{company.image}}" alt="">
+  <div class="details_info">
+    <p class="name">{{company.name}}</p>
+    <p class="location">{{company.city}}, {{company.address}}</p>
+  </div>
+</div>
+
+<div class="update">
+  <p class="title">Update your company</p>
+  <p class="section"><span class="material-symbols-outlined">apartment</span> Company information:</p>
+  <div class="update_top">
+    <textarea [value]="company.description" [(ngModel)]="companyDescription" placeholder="Enter description about your company"></textarea>
+    <div class="top_right">
+      <input [value]="company.name" [(ngModel)]="companyName" type="text" placeholder="Company name">
+      <input [value]="company.city" [(ngModel)]="companyCity" type="text" placeholder="Company city">
+      <input [value]="company.address" [(ngModel)]="companyAddress" type="text" placeholder="Company address">
+    </div>
+  </div>
+  <p class="section"><span class="material-symbols-outlined">mms</span> Company logo:</p>
+  <div class="update_bottom">
+    <input [value]="company.image" [(ngModel)]="companyImage" type="text" placeholder="Enter url to image">
+    <button (click)="updateCompany(company.id)">Update company</button>
+  </div>
+</div>
+
+<p class="company_vacancies">Your vacancies</p>
+<div class="list">
+  <a *ngFor="let vacancy of vacancies" href="/vacancies/{{vacancy.id}}" class="vacancy">
+    <div class="logo">
+      <img src="{{vacancy.image}}" alt="vacancy logo">
+    </div>
+    <div class="info">
+      <div class="info_name">
+        <p class="name">{{vacancy.name}}</p>
+        <p class="description">{{vacancy.description}}</p>
+      </div>
+      <p class="location">
+        from
+        <strong style="font-weight: 600; font-size: 15px; text-decoration: underline">
+          You
+        </strong>
+      </p>
+    </div>
+    <p class="salary">{{vacancy.salary.toLocaleString('ru-RU')}} ₸</p>
+  </a>
+</div>
